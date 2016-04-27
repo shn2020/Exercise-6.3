@@ -4,17 +4,17 @@ import javax.swing.JTextField;
 import javax.swing.JFrame;
 
 public class Border extends JFrame {
-	private JTextField tf1,tf2,tf3,tf4;
+	private JTextField[] tf = new JTextField[4];
 	public Border() {
-		tf1 = new JTextField(10);
-		tf2 = new JTextField(10);
-		tf3 = new JTextField(10);
-		tf4 = new JTextField(10);
+		tf[0] = new JTextField(10);
+		tf[1] = new JTextField(10);
+		tf[2] = new JTextField(10);
+		tf[3] = new JTextField(10);
 		setLayout(new BorderLayout());
-		add(tf1, BorderLayout.PAGE_START);
-		add(tf2, BorderLayout.PAGE_END);
-		add(tf3, BorderLayout.LINE_END);
-		add(tf4, BorderLayout.LINE_START);
+		add(tf[0], BorderLayout.PAGE_START);
+		add(tf[1], BorderLayout.PAGE_END);
+		add(tf[2], BorderLayout.LINE_END);
+		add(tf[3], BorderLayout.LINE_START);
 		
 		setTitle("Border Layout");
 		setVisible(true);
