@@ -4,17 +4,17 @@ import javax.swing.JTextField;
 import javax.swing.JFrame;
 
 public class Flow extends JFrame {
-	private JTextField tf1,tf2,tf3,tf4;
+	private JTextField[] tf = new JTextField[4];
 	public Flow() {
-		tf1 = new JTextField(10);
-		tf2 = new JTextField(10);
-		tf3 = new JTextField(10);
-		tf4 = new JTextField(10);
+		tf[0] = new JTextField(10);
+		tf[1] = new JTextField(10);
+		tf[2] = new JTextField(10);
+		tf[3] = new JTextField(10);
 		setLayout(new FlowLayout());
-		add(tf1);
-		add(tf2);
-		add(tf3);
-		add(tf4);
+		add(tf[0]);
+		add(tf[1]);
+		add(tf[2]);
+		add(tf[3]);
 		
 		setTitle("Flow Layout");
 		setVisible(true);
