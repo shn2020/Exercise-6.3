@@ -4,17 +4,17 @@ import javax.swing.JTextField;
 import javax.swing.JFrame;
 
 public class Grid extends JFrame {
-	private JTextField tf1,tf2,tf3,tf4;
+	private JTextField[] tf = new JTextField[4];
 	public Grid() {
-		tf1 = new JTextField(5);
-		tf2 = new JTextField(5);
-		tf3 = new JTextField(5);
-		tf4 = new JTextField(5);
+		tf[0] = new JTextField(5);
+		tf[1] = new JTextField(5);
+		tf[2] = new JTextField(5);
+		tf[3] = new JTextField(5);
 		setLayout(new GridLayout(2,2));
-		add(tf1,0,0);
-		add(tf2,0,1);
-		add(tf3,1,0);
-		add(tf4,1,1);
+		add(tf[0],0,0);
+		add(tf[1],0,1);
+		add(tf[2],1,0);
+		add(tf[3],1,1);
 		
 		setTitle("Grid Layout");
 		setVisible(true);
